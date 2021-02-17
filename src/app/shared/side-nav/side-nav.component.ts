@@ -10,7 +10,6 @@ export class SideNavComponent implements OnInit {
     { name: 'Home', url: '', icon: '' },
     { name: 'About me', url: '/about-me', icon: '' },
     { name: 'Resume', url: '/resume', icon: '' },
-    { name: 'Resume', url: '/resume', icon: '' },
     { name: 'Skills', url: '/skills', icon: '' },
     { name: 'Contact', url: '/contact', icon: '' },
   ];
