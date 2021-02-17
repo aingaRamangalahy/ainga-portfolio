@@ -1,5 +1,31 @@
-<div class="aside">
-    <ul *ngFor="let m of menu"> 
-        <li><a [routerLink]="[m.url]"> {{m.name}} </a></li>
-    </ul>
+<div class="aside-container d-flex flex-column justify-content-between align-items-center">
+    <div class="me">
+
+        <div class="info d-flex flex-column align-items-center">
+            <div class="img-container">
+                <img src="assets/images/ainga.png" class="img-fluid" alt="ainga ramangalahy">
+            </div>
+            <h2 class="name">
+                Ainga Ramangalahy
+            </h2>
+            <p class="desc"> Fullt stack web developer</p>
+        </div>
+        
+
+        <div class="menu mt-5">
+            <ul *ngFor="let m of menu"> 
+                <li><a [routerLink]="[m.url]"> {{m.name}} </a></li>
+            </ul>
+        </div>
+    </div>
+
+   
+
+    <div class="footer">
+        <ul>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">facebook</a></li>
+        </ul>
+    </div>
 </div>

@@ -1,0 +1,22 @@
+.aside-container {
+    background-color: #d1d6de;
+    height: 100vh;
+
+    .me {
+        .info {
+            .name {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.img-container {
+    width: 100px;
+    height: 100px;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
