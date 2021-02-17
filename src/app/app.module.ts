@@ -10,6 +10,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProfileComponent } from './shared/profile/profile.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ProfileComponent } from './shared/profile/profile.component';
     AboutComponent,
     ResumeComponent,
     ContactComponent,
-    ProfileComponent
+    ProfileComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

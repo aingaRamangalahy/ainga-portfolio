@@ -1,1 +1,5 @@
-<p>side-nav works!</p>
+<div class="aside">
+    <ul *ngFor="let m of menu"> 
+        <li><a [routerLink]="[m.url]"> {{m.name}} </a></li>
+    </ul>
+</div>
