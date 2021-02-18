@@ -13,6 +13,19 @@ import { ProfileComponent } from './shared/profile/profile.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SkillsComponent } from './pages/skills/skills.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EducationComponent } from './pages/resume/education/education.component';
+import { ExperienceComponent } from './pages/resume/experience/experience.component';
+import {CardModule} from 'primeng/card';
+import {TimelineModule} from 'primeng/timeline';
+import { ChipModule } from 'primeng/chip';
+
+const primes = [
+  CardModule,
+  TimelineModule,
+  ChipModule
+]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +36,16 @@ import { SkillsComponent } from './pages/skills/skills.component';
     ResumeComponent,
     ContactComponent,
     ProfileComponent,
-    SkillsComponent
+    SkillsComponent,
+    EducationComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ...primes
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,13 @@
+
 .line {
-    width: 50%;
+    width: 30%;
     height: 2px;
     background-color: #000;
+}
+
+
+h1::first-letter {
+    font-weight: bold;
+    color: #2196F3;
+    font-size: 120%;
 }

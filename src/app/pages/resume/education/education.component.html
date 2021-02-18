@@ -1,0 +1,16 @@
+<div class="ed">
+    <app-header title="Education"></app-header>
+    <div class="ed-content mt-4">
+        <p-timeline [value]="events" align="alternate">
+            <ng-template pTemplate="marker" let-event>
+                <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
+                    
+                </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+                <p-card [header]="event.status" [subheader]="event.date">
+                </p-card>
+            </ng-template>
+        </p-timeline>
+    </div>
+</div>

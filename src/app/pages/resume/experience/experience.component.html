@@ -1,0 +1,22 @@
+<div class="exp">
+    <app-header title="Work Experience"></app-header>
+    <div class="exp-content">
+
+        <p-timeline [value]="events" align="alternate">
+            <ng-template pTemplate="marker" let-event>
+                <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">                   
+                </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+                <p-card [header]="event.status" [subheader]="event.date">
+                    <p>{{event.description}}</p>                    
+                    <div class="stack-list">
+                       <span *ngFor="let stack of event.stack">
+                           <p-chip label="{{stack}}" class="m-1"></p-chip>
+                       </span> 
+                    </div>
+                </p-card>
+            </ng-template>
+        </p-timeline>
+    </div>
+</div>
