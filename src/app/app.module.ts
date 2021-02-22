@@ -19,11 +19,12 @@ import { ExperienceComponent } from './pages/resume/experience/experience.compon
 import {CardModule} from 'primeng/card';
 import {TimelineModule} from 'primeng/timeline';
 import { ChipModule } from 'primeng/chip';
-
+import {ProgressBarModule} from 'primeng/progressbar';
 const primes = [
   CardModule,
   TimelineModule,
-  ChipModule
+  ChipModule,
+  ProgressBarModule
 ]
 
 @NgModule({
